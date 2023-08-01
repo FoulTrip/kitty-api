@@ -4,7 +4,9 @@ import iconHistory from "@/assets/iconHistoria.png";
 import sanrioPublic from "@/assets/sanrioPublic.png";
 import modelKitty from "@/assets/modelKitty.webp";
 import publichelloKitty from "@/assets/publicHelloKitty.webp";
+import arrowRight from "@/assets/arrow-right.svg"
 import styles from "./page.module.css";
+import Link from "next/link";
 
 function HistoryPage() {
   return (
@@ -75,12 +77,14 @@ function HistoryPage() {
           her a timeless character that has withstood the test of time.
         </p>
       </div>
-      {/* <div>
-        <div>
+      <div className={styles.indice}>
+        <Link href='/movies' className={styles.subIndice}>
           <p>Movies</p>
-          <div></div>
-        </div>
-      </div> */}
+          <div className={styles.imgIndice}>
+            <Image className={styles.iconIndice} src={arrowRight} alt="arrow" />
+          </div>
+        </Link>
+      </div>
     </>
   );
 }
