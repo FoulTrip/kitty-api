@@ -7,8 +7,9 @@ import Link from "next/link";
 
 import iconChevronRight from "@/assets/chevron-right.svg";
 import iconChevronDown from "@/assets/chevron-down.svg";
-import iconRightArrow from "@/assets/arrow-right.svg"
+import iconRightArrow from "@/assets/arrow-right.svg";
 import { useState } from "react";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -56,14 +57,46 @@ export default function Home() {
                 </div>
               </div>
               {open == true ? (
-                <div className={styles.listContent}>
-                  <div className={styles.subLIst}>
-                    <p>History</p>
-                    <div className={styles.iconlist}>
-                      <Image className={styles.imgList} src={iconRightArrow} alt="iconArrow" />
-                    </div>
+                <>
+                  <div className={styles.listContentExplain}>
+                    <Link href="/history" className={styles.subLIstExplain}>
+                      <p>History</p>
+                      <div className={styles.iconlist}>
+                        <Image
+                          className={styles.imgList}
+                          src={iconRightArrow}
+                          alt="iconArrow"
+                        />
+                      </div>
+                    </Link>
                   </div>
-                </div>
+
+                  <div className={styles.listContentExplain}>
+                    <Link href="/movies" className={styles.subLIstExplain}>
+                      <p>Movies</p>
+                      <div className={styles.iconlist}>
+                        <Image
+                          className={styles.imgList}
+                          src={iconRightArrow}
+                          alt="iconArrow"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+
+                  <div className={styles.listContentExplain}>
+                    <Link href="/characters" className={styles.subLIstExplain}>
+                      <p>Characters</p>
+                      <div className={styles.iconlist}>
+                        <Image
+                          className={styles.imgList}
+                          src={iconRightArrow}
+                          alt="iconArrow"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                </>
               ) : (
                 ""
               )}
@@ -71,6 +104,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

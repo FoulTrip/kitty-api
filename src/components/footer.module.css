@@ -1,0 +1,6 @@
+.footer {
+    margin-top: 1em;
+    display: grid;
+    place-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+}

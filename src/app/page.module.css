@@ -53,11 +53,17 @@
 
 .listContent {
   width: 90%;
-  margin-left: 5%;
+  margin-left: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-family: 'Nunito Sans', sans-serif;
+  padding: 10px;
+  border-radius: 1em;
+}
+
+.listContent p {
+  background: transparent;
 }
 
 .subLIst {
@@ -66,23 +72,56 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  background: transparent;
+  gap: 10px;
+}
+
+.listContentExplain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 15px;
+}
+
+.subLIstExplain {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  background: transparent;
+  padding: 8px;
+}
+
+.subLIstExplain:hover {
+  border: 1px solid gray;
+  border-radius: 1em;
 }
 
 .iconlist {
   display: grid;
   place-content: center;
+  background: transparent;
 }
 
 .imgList {
   width: 70%;
   height: auto;
+  background: transparent;
 }
 
 .iconsBanner {
   display: grid;
   place-content: center;
+  background: transparent;
 }
 
 .chevronRight {
   width: 90%;
+  background: transparent;
 }
