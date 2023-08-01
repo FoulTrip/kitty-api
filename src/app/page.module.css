@@ -14,6 +14,7 @@
 .Message {
   width: 100%;
   text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .nameGirls {
@@ -56,9 +57,32 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.subLIst {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.iconlist {
+  display: grid;
+  place-content: center;
+}
+
+.imgList {
+  width: 70%;
+  height: auto;
 }
 
 .iconsBanner {
   display: grid;
   place-content: center;
+}
+
+.chevronRight {
+  width: 90%;
 }

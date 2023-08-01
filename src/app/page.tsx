@@ -7,8 +7,8 @@ import Link from "next/link";
 
 import iconChevronRight from "@/assets/chevron-right.svg";
 import iconChevronDown from "@/assets/chevron-down.svg";
+import iconRightArrow from "@/assets/arrow-right.svg"
 import { useState } from "react";
-import ListContent from "@/components/ListContent";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -55,7 +55,18 @@ export default function Home() {
                   )}
                 </div>
               </div>
-              {open == true ? <ListContent /> : ""}
+              {open == true ? (
+                <div className={styles.listContent}>
+                  <div className={styles.subLIst}>
+                    <p>History</p>
+                    <div className={styles.iconlist}>
+                      <Image className={styles.imgList} src={iconRightArrow} alt="iconArrow" />
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>
