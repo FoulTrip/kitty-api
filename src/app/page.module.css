@@ -43,6 +43,13 @@
   font-size: 12vh;
 }
 
+@media screen and (max-width: 600px) {
+  .nameKitty {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 10vh;
+  }
+}
+
 .listContent {
   width: 90%;
   margin-left: 5%;
