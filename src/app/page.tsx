@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.subMain}>
           <p className={styles.Message}>
-            Para MI Novia hermosa{" "}
+            For my beautiful girlfriend {""}
             <Link
               className={styles.nameGirls}
               href="https://www.instagram.com/m4r1q_/"
