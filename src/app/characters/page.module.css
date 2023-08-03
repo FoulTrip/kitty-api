@@ -1,6 +1,7 @@
 .main {
     display: grid;
     place-content: center;
+    margin-bottom: 3em;
 }
 
 .subMain {
@@ -29,79 +30,58 @@
     height: auto;
 }
 
-.Block {
+.cards {
     width: 90%;
     margin-left: 5%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1em;
-    margin-bottom: 3em;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
-.BlockTwo {
-    width: 90%;
-    margin-left: 5%;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    margin-top: 1em;
-}
-
-.BlockFinal {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 3em;
-}
-
-.textBlock {
-    flex-basis: 400px;
+.card {
+    flex-basis: 200px;
     flex-grow: 1;
-    padding: 10px;
-    text-align: center;
+    background: #ffeded;
+    border-radius: 10px;
+    padding: 20px 5px 0px 5px;
+}
+
+.card:hover {
+    scale: 1.02;
+}
+
+.imgCard {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background: transparent;
+}
+
+.subImg {
+    width: 10vh;
+    height: auto;
+    background: transparent;
+}
+
+.infoCharacter {
     display: grid;
     place-content: center;
+    padding: 5px;
     font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    background: transparent;
 }
 
-.textBlockFinal {
-    width: 50%;
-    margin-left: 25%;
-    padding: 10px;
-    text-align: center;
+.indice {
     display: grid;
     place-content: center;
     font-family: 'Nunito Sans', sans-serif;
     margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.imgBlock {
-    flex-basis: 400px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-grow: 1;
-}
-
-.iconBlock {
-    width: 80%;
-    height: auto;
-}
-
-.modelhelloKitty {
-    animation-name: show;
-    animation-fill-mode: both;
-    animation-timeline: inherit;
-    width: 60%;
-    height: auto;
 }
 
 .afterIndex {
-    display: grid;
-    place-content: center;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.indice {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -113,7 +93,7 @@
     text-decoration: none;
     color: black;
     padding-left: 10px;
-    padding-right: 7px;
+    padding-right: 10px;
     gap: 5px;
     border-radius: 1em;
 }
@@ -139,18 +119,6 @@
     background: transparent;
 }
 
-@keyframes show {
-    from {
-        opacity: 0;
-        scale: 25%;
-    }
-
-    to {
-        opacity: 1;
-        scale: 100%;
-    }
-}
-
 @media screen and (max-width: 900px) {
     .subMain p {
         font-size: 10vh;
@@ -165,17 +133,5 @@
     .iconMain {
         width: 13vh;
         height: auto;
-    }
-    
-    .textBlockFinal {
-        margin: 0;
-        margin-top: 2em;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        font-family: 'Nunito Sans', sans-serif;
     }
 }

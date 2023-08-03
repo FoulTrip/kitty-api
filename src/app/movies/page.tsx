@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import arrowRight from "@/assets/arrow-right.svg";
 import arrowLeft from "@/assets/arrow-left.svg";
+import iconHome from "@/assets/iconHome.svg"
 
 function MoviePage() {
   return (
@@ -44,8 +45,8 @@ function MoviePage() {
             </div>
             <p>History</p>
           </Link>
-          <Link href="/Games" className={styles.subIndice}>
-            <p>Games</p>
+          <Link href="/characters" className={styles.subIndice}>
+            <p>Characters</p>
             <div className={styles.imgIndice}>
               <Image
                 className={styles.iconIndice}
@@ -53,6 +54,16 @@ function MoviePage() {
                 alt="arrow"
               />
             </div>
+          </Link>
+          <Link href="/" className={styles.subIndice}>
+            <div className={styles.imgIndice}>
+              <Image
+                className={styles.iconIndice}
+                src={iconHome}
+                alt="arrow"
+              />
+            </div>
+            <p>Home</p>
           </Link>
         </div>
       </div>
