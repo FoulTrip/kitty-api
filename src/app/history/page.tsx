@@ -78,6 +78,7 @@ function HistoryPage() {
           her a timeless character that has withstood the test of time.
         </p>
       </div>
+      
       <div className={styles.afterIndex}>
         <div className={styles.indice}>
           <Link href="/movies" className={styles.subIndice}>
